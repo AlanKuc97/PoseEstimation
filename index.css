@@ -1,0 +1,16 @@
+header{
+	width:100%;
+	height:20px;
+	background-color:#ff9933;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+footer{
+	width:100%;
+	height:20px;
+	background-color:#ff9933;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}

@@ -1,6 +1,6 @@
 let capture;
 let poseNet;
-let fr = 15;
+let fr = 30;
 let videoHeight = 480;
 let videoWidth = 640;
 let timeSign = document.getElementById("timeSign");

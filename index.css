@@ -14,7 +14,33 @@ footer{
 	left: 0;
 	bottom: 0;
 }
-#timeSign{
-	margin-top:5%;
-	font-size:25px;
+h1{
+	text-align: center;
+	margin-top:15%;
+}
+#mainContent{
+	margin-top:50px;
+	margin-left:30%;
+}
+button{
+	font-family: inherit;
+	font-size: 20px;
+	background-color:white;
+	padding: 20px 50px;
+	cursor: pointer;
+	border-color:#ff9933;
+	border-top-left-radius:25px;
+	border-bottom-right-radius:25px;
+	border-style: solid;
+	
+}
+button:hover {
+  background-color: #ff9933;
+  color:white;
+  transition: 0.3s;
+}
+#highEnd{
+	position: fixed;
+	right:0;
+	margin-right:30%;
 }

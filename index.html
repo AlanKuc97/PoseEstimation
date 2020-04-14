@@ -9,10 +9,11 @@
 	<header></header>
 	<h1><i>Choose PC type</i></h1>
 	<div id="mainContent">
-		
-		<button id="lowEnd" onclick="window.location.href = 'low-end/index.html';"><i>Low-end PC</i></button>
-		<button id="highEnd" onclick="window.location.href = 'high-end/index.html';"><i>High-end PC</i></button>
+		<button onclick="window.location.href = 'low-end/index.html';"><i>Low-end PC</i></button>
+		<button id="auto" onclick="checkCPUthreads()"><i>Auto-detect</i></button>
+		<button onclick="window.location.href = 'high-end/index.html';"><i>High-end PC</i></button>
 	</div>
 	<footer></footer>
+	<script src="index.js"></script>
   </body>
 </html>

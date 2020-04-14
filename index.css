@@ -20,7 +20,8 @@ h1{
 }
 #mainContent{
 	margin-top:50px;
-	margin-left:30%;
+	display: flex; 
+	justify-content: center;
 }
 button{
 	font-family: inherit;
@@ -32,15 +33,10 @@ button{
 	border-top-left-radius:25px;
 	border-bottom-right-radius:25px;
 	border-style: solid;
-	
+	margin-left:1%;
 }
 button:hover {
   background-color: #ff9933;
   color:white;
   transition: 0.3s;
-}
-#highEnd{
-	position: fixed;
-	right:0;
-	margin-right:30%;
 }

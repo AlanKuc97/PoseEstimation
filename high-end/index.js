@@ -1,6 +1,6 @@
 /*
-	*** NEURAL NETWORK LABEL MEANING ***
-	G - sitting still 
+	*** NEURAL NETWORK OUTPUT LABEL MEANING ***
+	G - sitting still (doing nothing)
 	Q - stretching neck to right side
 	W - stretching neck to left side
 	E - stretching neck front
@@ -14,6 +14,9 @@ let fr = 30;
 let videoHeight = 480;
 let videoWidth = 640;
 let timeSign = document.getElementById("timeSign");
+let warmupSignArray = [document.getElementById("nR"),document.getElementById("nL"),
+						document.getElementById("nF"),document.getElementById("aR"),
+						document.getElementById("aL")];
 let timer = [performance.now(),0];
 let constraints = {
 		video: {
@@ -93,26 +96,30 @@ function workoutCheck(poseLabel){
 			break;
 		case "Q":
 			timer[0] = performance.now();
+			warmupSignArray[0].style.color = "green";
 			timeSign.innerText = "Warming up!";
 			break;
 		case "W":
 			timer[0] = performance.now();
+			warmupSignArray[1].style.color = "green";
 			timeSign.innerText = "Warming up!";
 			break;
 		case "E":
 			timer[0] = performance.now();
+			warmupSignArray[2].style.color = "green";
 			timeSign.innerText = "Warming up!";
 			break;
 		case "R":
 			timer[0] = performance.now();
+			warmupSignArray[3].style.color = "green";
 			timeSign.innerText = "Warming up!";
 			break;
 		case "T":
 			timer[0] = performance.now();
+			warmupSignArray[4].style.color = "green";
 			timeSign.innerText = "Warming up!";
 			break;
 	}
-	//console.log(poseLabel);
 }
 
 function getTimerDifference(){
@@ -123,6 +130,10 @@ function getTimerDifference(){
 function checkTimerAlert(time){
 	if(time > 3600){
 		alert("Please warmup!");
+	}else if(time > 20){
+		for(let i = 0; i < warmupSignArray.length; i++){
+			warmupSignArray[i].style.color = "black";
+		}
 	}
 }
 

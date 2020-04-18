@@ -5,6 +5,8 @@ header{
 	position: fixed;
 	left: 0;
 	top: 0;
+	display: flex; 
+	justify-content: center;
 }
 footer{
 	width:100%;
@@ -17,4 +19,7 @@ footer{
 #timeSign{
 	margin-top:3%;
 	font-size:25px;
+}
+i{
+	margin-left: 20px;
 }

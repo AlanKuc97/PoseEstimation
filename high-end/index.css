@@ -5,8 +5,7 @@ header{
 	position: fixed;
 	left: 0;
 	top: 0;
-	display: flex; 
-	justify-content: center;
+	
 }
 footer{
 	width:100%;
@@ -22,4 +21,20 @@ footer{
 }
 i{
 	margin-left: 20px;
+}
+.warmupSignDiv{
+	margin-top:3%;
+	display: flex; 
+	justify-content: center;
+	margin-left:20px;
+}
+img {
+    display: block;
+    max-width:180px;
+    max-height:180px;
+    width: auto;
+    height: auto;
+}
+.imageSign{
+	margin-left:20px;
 }

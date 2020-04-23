@@ -7,6 +7,8 @@
 	R - stretching right arm
 	T - stretching left arm
 */
+alert("Make sure there is enough light in room!");
+alert("Make sure camera is right in front of you!");
 let capture;
 let pose;
 let poseNet;
@@ -43,7 +45,7 @@ function setup(){
 	capture.size(videoWidth,videoHeight);
 	capture.hide();
 	createCanvas(capture.width, capture.height)
-		.position((windowWidth - capture.width) / 2, (windowHeight - capture.height - timeSign.clientHeight) / 2);
+		.position((windowWidth - capture.width) / 2, (windowHeight - capture.height - timeSign.clientHeight)/1.5);
 	poseNet = ml5.poseNet(capture,modelReady);
 	poseNet.on('pose',getPoses);
 	neuralNet = ml5.neuralNetwork(parameters);

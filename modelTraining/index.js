@@ -1,3 +1,6 @@
+/*
+	Pavyzdys rašant šita koda buvo video: https://www.youtube.com/watch?v=FYgYyq-xqAw&t=141s  
+*/
 let neuralNet;
 let parameters = {
     inputs: 34,

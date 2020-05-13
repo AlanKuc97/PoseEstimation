@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+	<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script> 
 	<link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="utf-8" />
-	<title>Bachelor's project</title>
   </head>
   <body>
-	<header></header>
-	<h1><i>Choose PC type</i></h1>
-	<div id="mainContent">
-		<button onclick="window.location.href = 'low-end/index.html';"><i>Low-end PC</i></button>
-		<button id="auto" onclick="checkCPUthreads()"><i>Auto-detect</i></button>
-		<button onclick="window.location.href = 'high-end/index.html';"><i>High-end PC</i></button>
+	<header>
+		<div id="timeSign" align="center">Time without workout:</div>	
+	</header>
+	<div class="warmupSignDiv">
+		<div class="imageSign">
+			<img src="../media/rsNeckStr.PNG" style="width:100;">
+			<i id="nR">Neck stretch right side</i>
+		</div>
+		<div class="imageSign">
+			<img src="../media/lsNeckStr.PNG" style="width:100;">
+			<i id="nL">Neck stretch left side</i>
+		</div>
+		<div class="imageSign">
+			<img src="../media/fsNeckStr.PNG" style="width:100;">
+			<i id="nF">Neck stretch front side</i>
+		</div>
+		<div class="imageSign">
+			<img src="../media/rightArmStr.PNG" style="width:100;">
+			<i id="aR">Right arm stretch</i>
+		</div>
+		<div class="imageSign">
+			<img src="../media/leftArmStr.PNG" style="width:100;">
+			<i id="aL">Left arm stretch</i>
+		</div>
+		
 	</div>
+	<div class="wrapper">
+		<button onclick="saveSummary()">Download results</button>
+	</div>
+	
 	<footer></footer>
-	<script src="index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

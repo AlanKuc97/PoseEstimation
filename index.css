@@ -5,6 +5,7 @@ header{
 	position: fixed;
 	left: 0;
 	top: 0;
+	
 }
 footer{
 	width:100%;
@@ -14,29 +15,45 @@ footer{
 	left: 0;
 	bottom: 0;
 }
-h1{
-	text-align: center;
-	margin-top:15%;
+#timeSign{
+	font-size:20px;
 }
-#mainContent{
-	margin-top:50px;
+i{
+	margin-left: 20px;
+}
+.warmupSignDiv{
+	margin-top:3%;
 	display: flex; 
 	justify-content: center;
+	margin-left:20px;
+}
+img {
+    display: block;
+    max-width:180px;
+    max-height:180px;
+    width: auto;
+    height: auto;
+}
+.imageSign{
+	margin-left:20px;
 }
 button{
+	margin-left:20px;
 	font-family: inherit;
 	font-size: 20px;
 	background-color:white;
-	padding: 20px 50px;
 	cursor: pointer;
 	border-color:#ff9933;
 	border-top-left-radius:25px;
 	border-bottom-right-radius:25px;
 	border-style: solid;
-	margin-left:1%;
+	margin-right:15%;
 }
 button:hover {
   background-color: #ff9933;
   color:white;
   transition: 0.3s;
+}
+.wrapper {
+    text-align: right;
 }

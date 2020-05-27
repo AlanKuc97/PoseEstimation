@@ -6,7 +6,6 @@
 	E - stretching neck front
 	R - stretching right arm
 	T - stretching left arm
-	Pavyzdys rašant šita koda buvo video: https://www.youtube.com/watch?v=FYgYyq-xqAw&t=141s  
 */
 let capture;
 let pose;

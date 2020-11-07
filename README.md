@@ -1,12 +1,8 @@
-The only difference between high-end and low-end version of program is frame rate limit. 
-For low-end PC it is better to lower CPU and GPU load. All functionality is available in both versions.
-
-Used versions:
+Versions:
 p5.js 0.10.2
 ml5.js 0.4.2
 
 HOW TO USE!
-There are 2 ways to use this program
 ###   1 way   ###
 Use program online, it was uploaded on VU MIF server.
 1. Open link: https://karklas.mif.vu.lt/~alku3851/Bakalauras/index.html 

@@ -3,7 +3,7 @@ p5.js 0.10.2
 
 ml5.js 0.4.2
 
-HOW TO USE!
+### HOW TO USE! ###
 ###   1 way   ###
 Use program online, it was uploaded on VU MIF server.
 1. Open link: https://karklas.mif.vu.lt/~alku3851/Bakalauras/index.html 
